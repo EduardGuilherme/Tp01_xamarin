@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tp01.MainPage"
+             BackgroundColor="Black">
+
+    <StackLayout>
+        <Label FontSize="Title" TextColor="White" Text="Aplicação Teste " HorizontalOptions="Center"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            
+            </Grid.ColumnDefinitions>
+              
+        <Label FontSize="Large" Grid.Row="2" TextColor="White" Text="ID"/>
+            <Entry BackgroundColor="White" Grid.Row="2" Grid.Column="1"/>
+            <Label FontSize="Large" Grid.Row="3" TextColor="White" Text="Pass"/>
+            <Entry BackgroundColor="White" Grid.Column="1" Grid.Row="3"/>
+
+        </Grid>
+        <Button BackgroundColor="Gray" TextColor="Maroon" Text="OK"/>
+        <Button BackgroundColor="Gray" TextColor="Maroon" Text="Limpar"/>
+        <Button BackgroundColor="Gray" TextColor="Maroon" Text="Creditos"/>
+      
+    </StackLayout>
+
+</ContentPage>
