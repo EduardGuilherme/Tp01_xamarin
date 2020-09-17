@@ -14,5 +14,32 @@ namespace tp01
         {
             InitializeComponent();
         }
+
+        async void okClick(object sender, EventArgs e)
+        {
+            string idValue = id.Text;
+            string passValue = pass.Text;
+            if(idValue == "admin" && passValue == "senha@admin")
+            {
+                await DisplayAlert("Login", "Usuario logado", "OK");
+            }
+            else
+            {
+                await DisplayAlert("Login","Usuario Invalido","Ok");
+            }
+        }
+
+        private void limparClick(object sender, EventArgs e)
+        {
+            id.Text = "";
+            pass.Text = "";
+
+            id.Focus();
+        }
+
+        async void creditosClick(object sender, EventArgs args)
+        {
+            await DisplayAlert("Autores", "Matheus Gomes e Eduardo Guilherme", "OK");
+        }
     }
 }
